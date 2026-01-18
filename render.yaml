@@ -1,0 +1,16 @@
+cat > render.yaml << 'EOF'
+services:
+  - type: web
+    name: discord-bypass-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: PREFIX
+        value: "!"
+      - key: PORT
+        value: "3000"
+EOF

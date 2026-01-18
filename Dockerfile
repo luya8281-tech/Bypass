@@ -1,4 +1,3 @@
-cat > Dockerfile << 'EOF'
 FROM node:18-slim
 
 # Install Chrome dependencies
@@ -34,4 +33,3 @@ EXPOSE 3000
 
 # Start bot
 CMD ["node", "src/index.js"]
-EOF

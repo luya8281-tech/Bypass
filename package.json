@@ -1,4 +1,3 @@
-cat > package.json << 'EOF'
 {
   "name": "discord-bypass-bot",
   "version": "2.0.0",
@@ -22,4 +21,4 @@ cat > package.json << 'EOF'
     "node": ">=18.0.0"
   }
 }
-EOF
+
